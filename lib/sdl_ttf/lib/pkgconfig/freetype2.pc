@@ -1,0 +1,12 @@
+prefix=/home/cidi/nfs_share/hnoyi/HnoyiCam/3rd_party/osd/jetson_sdl_ttf/3rd_party/lib//sdl_ttf
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FreeType 2
+Description: A free, high-quality, and portable font engine.
+Version: 15.0.9
+Requires:
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz  
+Cflags: -I${includedir}/freetype2 -I${includedir}
